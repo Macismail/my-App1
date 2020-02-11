@@ -25,7 +25,7 @@ class MainContent extends Component {
         <Container>
         <Row>
           <Col md={4}>
-            <Card style={{ width: '18rem' }}>
+            <Card style={{ width: '18rem', background: 'green' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
                 <Card.Title>{this.state.valu}</Card.Title>
@@ -33,7 +33,7 @@ class MainContent extends Component {
                   Some quick example text to build on the card title and make up the bulk of
                   the card's content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="danger">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -59,11 +59,12 @@ class MainContent extends Component {
                   Some quick example text to build on the card title and make up the bulk of
                   the card's content.
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="success">Go somewhere</Button>
               </Card.Body>
             </Card>
           </Col>
         </Row>
+        <br />
           <Alert variant="primary"> Primary <b>{this.state.count}</b> </Alert>
           <Button variant="success" onClick={this.change}>Add 1</Button>
           <Button variant="warning">Warning</Button>
